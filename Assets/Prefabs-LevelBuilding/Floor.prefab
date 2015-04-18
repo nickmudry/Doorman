@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11407814}
   m_Layer: 8
   m_Name: Floor
-  m_TagString: Floor
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,11 +85,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9f5be513e474d43a87c3c4771bf5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBecomeDoor: 1
+  canBecomeDoor: 0
   becameDoor: 0
-  door: {fileID: 2100000, guid: 32d81e42a819c884e98ceb3ad3794611, type: 2}
+  door: {fileID: 2100000, guid: 526e49e152817684e8b1aab375c9e767, type: 2}
   wall: {fileID: 2100000, guid: b4d0a97acaeef51418d59c9a9a022472, type: 2}
-  selectedColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

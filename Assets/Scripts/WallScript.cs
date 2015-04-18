@@ -7,10 +7,6 @@ public class WallScript : MonoBehaviour {
     GameObject player;
     public Material door;
     public Material wall;
-    
-    public Color selectedColor = Color.green;
-
-    private Color unselectedColor = Color.white;
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
@@ -24,9 +20,6 @@ public class WallScript : MonoBehaviour {
 
     void OnMouseOver()
     {
-        //selected green
-        gameObject.GetComponent<MeshRenderer>().material.color = selectedColor;
-
         if (Input.GetMouseButtonDown(0))
         {
             if (!becameDoor && canBecomeDoor && player.GetComponent<PlayerInventory>().totalDoors > 0)
@@ -43,12 +36,6 @@ public class WallScript : MonoBehaviour {
                 IsNoLongerDoor();
             }
         }
-    }
-    
-    void OnMouseExit()
-    {
-        //unselect reset color
-        gameObject.GetComponent<MeshRenderer>().material.color = unselectedColor;
     }
 
     void BecomeDoor()
