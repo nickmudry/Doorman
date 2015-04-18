@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2911013539eed964f9c90ea130be8f17
-timeCreated: 1429369272
+guid: 17102a26feb6e8540b2b6518b750da6a
+timeCreated: 1429374586
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
@@ -77,12 +77,13 @@ ModelImporter:
     4300006: polySurface5
     4300008: overcoat
     4300010: rightleg
-    4300012: polySurface4
-    4300014: leftleg
+    4300012: leftleg
+    4300014: polySurface4
     4300016: undershirt
     4300018: pPlane1
     4300020: pSphere1
     7400000: idle
+    7400002: walk
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -146,6 +147,8 @@ ModelImporter:
         weight: 1
       - path: head/transform3
         weight: 1
+      - path: leftleg
+        weight: 1
       - path: legs
         weight: 1
       - path: legs/hips
@@ -153,10 +156,6 @@ ModelImporter:
       - path: legs/hips/polySurface4
         weight: 1
       - path: legs/hips/transform2
-        weight: 1
-      - path: legs/leftleg
-        weight: 1
-      - path: legs/rightleg
         weight: 1
       - path: legs/transform1
         weight: 1
@@ -166,6 +165,78 @@ ModelImporter:
         weight: 1
       - path: pSphere1
         weight: 1
+      - path: rightleg
+        weight: 1
+      - path: undershirt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 280
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: hat/polySurface6
+        weight: 1
+      - path: hat/polySurface7
+        weight: 1
+      - path: hat/polySurface7/polySurface8
+        weight: 1
+      - path: hat/polySurface7/polySurface9
+        weight: 1
+      - path: hat/polySurface7/transform5
+        weight: 1
+      - path: hat/transform4
+        weight: 1
+      - path: head
+        weight: 1
+      - path: head/polySurface5
+        weight: 1
+      - path: head/transform3
+        weight: 1
+      - path: leftleg
+        weight: 1
+      - path: legs
+        weight: 1
+      - path: legs/hips
+        weight: 1
+      - path: legs/hips/polySurface4
+        weight: 1
+      - path: legs/hips/transform2
+        weight: 1
+      - path: legs/transform1
+        weight: 1
+      - path: overcoat
+        weight: 1
+      - path: pPlane1
+        weight: 1
+      - path: pSphere1
+        weight: 1
+      - path: rightleg
+        weight: 1
       - path: undershirt
         weight: 1
       maskType: 0
@@ -174,7 +245,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 25
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
