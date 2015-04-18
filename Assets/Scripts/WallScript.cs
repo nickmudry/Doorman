@@ -27,6 +27,7 @@ public class WallScript : MonoBehaviour {
     void BecomeDoor()
     {
         becameDoor = true;
+        gameObject.GetComponent<Collider>().isTrigger = true;
         gameObject.GetComponent<Renderer>().material.color = Color.blue;        
     }
 
