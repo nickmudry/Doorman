@@ -4,9 +4,13 @@ using System.Collections;
 public class WallScript : MonoBehaviour {
     public bool canBecomeDoor;
     public bool becameDoor;
+    GameObject player;
+    public Material door;
+    public Material wall;
 	// Use this for initialization
 	void Start () {
-	
+        player = GameObject.Find("Player");
+        
 	}
 	
 	// Update is called once per frame
@@ -18,18 +22,17 @@ public class WallScript : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Left Mouse Down on " + gameObject.name);
-            if (canBecomeDoor)
+            if (!becameDoor && canBecomeDoor && player.GetComponent<PlayerInventory>().totalDoors > 0)
             {
-               
+                player.SendMessage("UseDoor");
                 BecomeDoor();
             }
         }
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log("Right Mouse Down on " + gameObject.name);
-            if (becameDoor)
+            if (canBecomeDoor && becameDoor)
             {
+                player.SendMessage("GiveDoor");
                 IsNoLongerDoor();
             }
         }
@@ -39,14 +42,14 @@ public class WallScript : MonoBehaviour {
     {
         becameDoor = true;
         gameObject.GetComponent<Collider>().isTrigger = true;
-        gameObject.GetComponent<Renderer>().material.color = Color.blue;        
+        gameObject.GetComponent<Renderer>().material = door;
     }
 
     void IsNoLongerDoor()
     {
         becameDoor = false;
         gameObject.GetComponent<Collider>().isTrigger = false;
-        gameObject.GetComponent<Renderer>().material.color = Color.white; 
+        gameObject.GetComponent<Renderer>().material = wall;
     }
 
     void CanBecomeDoor(bool canBeDoor)

@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class CharacterMakeDoor : MonoBehaviour {
-
 	// Use this for initialization
 	void Start () {
 	
@@ -18,6 +17,7 @@ public class CharacterMakeDoor : MonoBehaviour {
         if (col.gameObject.tag == "Wall")
         {
             col.gameObject.SendMessage("CanBecomeDoor", true);
+            
         }
     }
 
@@ -26,6 +26,7 @@ public class CharacterMakeDoor : MonoBehaviour {
         if (col.gameObject.tag == "Wall")
         {
             col.gameObject.SendMessage("CanBecomeDoor", false);
+            
         }
     }
 }
