@@ -24,4 +24,13 @@ public class PlayerInventory : MonoBehaviour {
     {
         totalDoors += 1;
     }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Points")
+        {
+            totalPoints += 1;
+            Destroy(col.gameObject);
+        }
+    }
 }
