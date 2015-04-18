@@ -8,8 +8,6 @@ public class CharacterMovementScript : MonoBehaviour {
     public float speed;
     public float gravity;
 
-    public int doorsHeld = 10;
-
     private Vector3 moveDirection = Vector3.zero;
 	
     void Start()
@@ -38,6 +36,7 @@ public class CharacterMovementScript : MonoBehaviour {
 }
     void AnimationChecker()
     {
+        playerModel.GetComponent<Animator>().SetInteger("Stance", 0);
         //animation check with rotation
         if (Input.GetKey(KeyCode.D)) //Move Right
         {
@@ -64,9 +63,5 @@ public class CharacterMovementScript : MonoBehaviour {
         {
             playerModel.GetComponent<Animator>().SetInteger("Stance", 0);
         }
-    }
-    public void doorUsed()
-    {
-        doorsHeld -= 1;
     }
 }
