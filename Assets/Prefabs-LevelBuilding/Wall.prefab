@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9f5be513e474d43a87c3c4771bf5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBecomeDoor: 1
+  canBecomeDoor: 0
   becameDoor: 0
   door: {fileID: 2100000, guid: 32d81e42a819c884e98ceb3ad3794611, type: 2}
   wall: {fileID: 2100000, guid: 526e49e152817684e8b1aab375c9e767, type: 2}

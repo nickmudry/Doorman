@@ -24,8 +24,6 @@ public class WallScript : MonoBehaviour {
 
     void OnMouseOver()
     {
-        //selected green
-        gameObject.GetComponent<MeshRenderer>().material.color = selectedColor;
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -44,12 +42,6 @@ public class WallScript : MonoBehaviour {
             }
         }
     }
-    
-    void OnMouseExit()
-    {
-        //unselect reset color
-        gameObject.GetComponent<MeshRenderer>().material.color = unselectedColor;
-    }
 
     void BecomeDoor()
     {
@@ -65,7 +57,7 @@ public class WallScript : MonoBehaviour {
         gameObject.GetComponent<Renderer>().material = wall;
     }
 
-    void CanBecomeDoor(bool canBeDoor)
+    public void CanBecomeDoor(bool canBeDoor)
     {
         canBecomeDoor = canBeDoor;
     }

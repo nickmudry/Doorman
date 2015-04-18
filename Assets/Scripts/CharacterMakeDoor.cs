@@ -12,11 +12,11 @@ public class CharacterMakeDoor : MonoBehaviour {
 	    
 	}
 
-    void OnTriggerEnter(Collider col)
+    void OnTriggerStay(Collider col)
     {
         if (col.gameObject.tag == "Wall")
         {
-            col.gameObject.SendMessage("CanBecomeDoor", true);
+            col.gameObject.GetComponent<WallScript>().CanBecomeDoor(true);
             
         }
     }
@@ -25,8 +25,7 @@ public class CharacterMakeDoor : MonoBehaviour {
     {
         if (col.gameObject.tag == "Wall")
         {
-            col.gameObject.SendMessage("CanBecomeDoor", false);
-            
+            col.gameObject.GetComponent<WallScript>().CanBecomeDoor(false);            
         }
     }
 }
