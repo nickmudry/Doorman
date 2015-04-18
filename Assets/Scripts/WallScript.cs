@@ -14,13 +14,24 @@ public class WallScript : MonoBehaviour {
 
 	}
 
-    void OnMouseDown()
+    void OnMouseOver()
     {
-        Debug.Log("Mouse Down on " + gameObject.name);
-        if (canBecomeDoor)
+        if (Input.GetMouseButtonDown(0))
         {
-            becameDoor = true;
-            BecomeDoor();
+            Debug.Log("Left Mouse Down on " + gameObject.name);
+            if (canBecomeDoor)
+            {
+               
+                BecomeDoor();
+            }
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Debug.Log("Right Mouse Down on " + gameObject.name);
+            if (becameDoor)
+            {
+                IsNoLongerDoor();
+            }
         }
     }
 
@@ -29,6 +40,13 @@ public class WallScript : MonoBehaviour {
         becameDoor = true;
         gameObject.GetComponent<Collider>().isTrigger = true;
         gameObject.GetComponent<Renderer>().material.color = Color.blue;        
+    }
+
+    void IsNoLongerDoor()
+    {
+        becameDoor = false;
+        gameObject.GetComponent<Collider>().isTrigger = false;
+        gameObject.GetComponent<Renderer>().material.color = Color.white; 
     }
 
     void CanBecomeDoor(bool canBeDoor)
