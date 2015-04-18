@@ -5,8 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
-  - Floor
-  - Door
   layers:
   - Default
   - TransparentFX
@@ -19,7 +17,7 @@ TagManager:
   - Walls
   - Range Detector
   - Doors
-  - Sprite
+  - 
   - 
   - 
   - 
