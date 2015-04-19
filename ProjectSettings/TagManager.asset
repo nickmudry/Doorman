@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - Points
+  - Door
+  - Floor
   layers:
   - Default
   - TransparentFX
