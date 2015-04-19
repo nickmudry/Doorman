@@ -33,7 +33,7 @@ public class WallScript : MonoBehaviour {
 
     void OnMouseOver()
     {
-
+        GetComponent<MeshRenderer>().material.color = selectedColor;
         if (Input.GetMouseButtonDown(0))
         {
             if (!becameDoor && canBecomeDoor && player.GetComponent<PlayerInventory>().totalDoors > 0)
@@ -50,6 +50,11 @@ public class WallScript : MonoBehaviour {
                 IsNoLongerDoor();
             }
         }
+    }
+
+    void OnMouseExit()
+    {
+        GetComponent<MeshRenderer>().material.color = unselectedColor;
     }
 
     void BecomeDoor()
