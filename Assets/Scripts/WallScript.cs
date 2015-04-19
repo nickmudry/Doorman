@@ -15,8 +15,15 @@ public class WallScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
-        doorObject = GameObject.Find(gameObject.name + "/Door");
-        doorObject.SetActive(false);
+        if (GameObject.Find(gameObject.name + "/Door") != null)
+        {
+            doorObject = GameObject.Find(gameObject.name + "/Door");
+            doorObject.SetActive(false);
+        }
+        else
+        {
+            //Do nothing, because this is the floors, and they don't have doors. 
+        }
 	}
 	
 	// Update is called once per frame
