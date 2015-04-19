@@ -66,6 +66,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &115572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 490924}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &116732
 GameObject:
   m_ObjectHideFlags: 1
@@ -492,7 +507,7 @@ GameObject:
   - 143: {fileID: 14340920}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1108,6 +1123,7 @@ Transform:
   - {fileID: 494314}
   - {fileID: 448028}
   - {fileID: 489180}
+  - {fileID: 490924}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &489180
@@ -1116,12 +1132,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138850}
-  m_LocalRotation: {x: .537299693, y: 0, z: 0, w: .843391418}
-  m_LocalPosition: {x: 0, y: 7.75, z: -2}
+  m_LocalRotation: {x: .608761489, y: 0, z: 0, w: .793353319}
+  m_LocalPosition: {x: 0, y: 7.75, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 488096}
   m_RootOrder: 5
+--- !u!4 &490924
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488096}
+  m_RootOrder: 6
 --- !u!4 &494314
 Transform:
   m_ObjectHideFlags: 1
@@ -1928,7 +1956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerModel: {fileID: 161778}
-  speed: 6
+  speed: 3
   gravity: 250
 --- !u!114 &11486398
 MonoBehaviour:
@@ -1943,7 +1971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursor: {fileID: 0}
   target: {fileID: 488096}
-  target2: {fileID: 0}
+  target2: {fileID: 490924}
   dampTime: .25
 --- !u!124 &12467504
 Behaviour:

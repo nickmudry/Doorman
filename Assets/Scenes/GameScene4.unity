@@ -1473,18 +1473,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 172438, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486398, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
-      propertyPath: target2
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11466998, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
   m_IsPrefabParent: 0
@@ -10718,6 +10706,10 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 172438, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
   m_PrefabInternal: {fileID: 136860352}
+--- !u!4 &1214495054
+Transform:
+  m_PrefabParentObject: {fileID: 488096, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
+  m_PrefabInternal: {fileID: 136860352}
 --- !u!4 &1224523962
 Transform:
   m_PrefabParentObject: {fileID: 401466, guid: a9aaf77d2e758ba42bbba9e46e7a5cc2, type: 2}
@@ -11188,6 +11180,14 @@ Prefab:
       propertyPath: nodeLocations.Array.data[1]
       value: 
       objectReference: {fileID: 506761351}
+    - target: {fileID: 11407102, guid: a4a6274c32b4d89499fa52d9f59639e0, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1214495054}
+    - target: {fileID: 11420258, guid: a4a6274c32b4d89499fa52d9f59639e0, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a6274c32b4d89499fa52d9f59639e0, type: 2}
   m_IsPrefabParent: 0

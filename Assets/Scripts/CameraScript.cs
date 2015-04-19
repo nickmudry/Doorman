@@ -34,8 +34,8 @@ public class CameraScript : MonoBehaviour {
     {
         cursor.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
         cursor.transform.position = target2.transform.position;
-        Vector3 point = GetComponent<Camera>().WorldToViewportPoint(target.position);
-        Vector3 point2 = GetComponent<Camera>().WorldToViewportPoint(target2.position);
+        //Vector3 point = GetComponent<Camera>().WorldToViewportPoint(target.position);
+        //Vector3 point2 = GetComponent<Camera>().WorldToViewportPoint(target2.position);
         Vector3 delta = ((target.position + target2.position) / 2) - GetComponent<Camera>().ViewportToWorldPoint(new Vector3(.5f, .5f, 5));
         Vector3 destination = transform.position + delta;
 

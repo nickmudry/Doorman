@@ -13201,33 +13201,6 @@ Prefab:
     - {fileID: 11407814, guid: a9aaf77d2e758ba42bbba9e46e7a5cc2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a9aaf77d2e758ba42bbba9e46e7a5cc2, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1589190837
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1589190838}
-  m_Layer: 0
-  m_Name: Cursor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1589190838
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589190837}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.94000006, y: 1.69000006, z: 3.60700011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1001 &1589409786
 Prefab:
   m_ObjectHideFlags: 0
@@ -13328,11 +13301,11 @@ Prefab:
     - target: {fileID: 11486398, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
       propertyPath: cursor
       value: 
-      objectReference: {fileID: 1589190837}
+      objectReference: {fileID: 0}
     - target: {fileID: 11486398, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
       propertyPath: target2
       value: 
-      objectReference: {fileID: 1589190838}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87d044cac0cb50c45bee75d948869a52, type: 2}
   m_IsPrefabParent: 0
