@@ -7,6 +7,7 @@ public class WallScript : MonoBehaviour {
     GameObject player;
     public Material door;
     public Material wall;
+    GameObject doorObject;
     
     public Color selectedColor = Color.green;
 
@@ -14,7 +15,8 @@ public class WallScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
-        
+        doorObject = GameObject.Find(gameObject.name + "/Door");
+        doorObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -48,6 +50,8 @@ public class WallScript : MonoBehaviour {
         becameDoor = true;
         gameObject.GetComponent<Collider>().isTrigger = true;
         gameObject.GetComponent<Renderer>().material = door;
+        doorObject.SetActive(true);
+
     }
 
     void IsNoLongerDoor()
@@ -55,6 +59,7 @@ public class WallScript : MonoBehaviour {
         becameDoor = false;
         gameObject.GetComponent<Collider>().isTrigger = false;
         gameObject.GetComponent<Renderer>().material = wall;
+        doorObject.SetActive(false);
     }
 
     public void CanBecomeDoor(bool canBeDoor)
