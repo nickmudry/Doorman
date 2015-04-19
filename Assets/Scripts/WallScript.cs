@@ -5,6 +5,7 @@ public class WallScript : MonoBehaviour {
     public bool canBecomeDoor;
     public bool becameDoor;
     GameObject player;
+    GameObject playerDoor;
     public Material door;
     public Material wall;
     GameObject doorObject;
@@ -15,6 +16,7 @@ public class WallScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
+        playerDoor = GameObject.Find("playerDoor");
         if (GameObject.Find(gameObject.name + "/Door") != null)
         {
             doorObject = GameObject.Find(gameObject.name + "/Door");
@@ -26,19 +28,19 @@ public class WallScript : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-	}
-
     void OnMouseOver()
     {
-        GetComponent<MeshRenderer>().material.color = selectedColor;
+        if (canBecomeDoor)
+        {
+            GetComponent<MeshRenderer>().material.color = selectedColor;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             if (!becameDoor && canBecomeDoor && player.GetComponent<PlayerInventory>().totalDoors > 0)
             {
                 player.SendMessage("UseDoor");
+                playerDoor.SetActive(false);
                 BecomeDoor();
             }
         }
@@ -47,6 +49,7 @@ public class WallScript : MonoBehaviour {
             if (canBecomeDoor && becameDoor)
             {
                 player.SendMessage("GiveDoor");
+                playerDoor.SetActive(true);
                 IsNoLongerDoor();
             }
         }
