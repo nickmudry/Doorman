@@ -689,7 +689,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: a591f0f977206bc4aa2532f1561253be, type: 2}
+  - {fileID: 2100000, guid: e101828b28c31044ba07195d4523229c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162058}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ab4e0758d9b9904883117f06dd10606, type: 3}
   m_Name: 
@@ -920,10 +920,7 @@ MonoBehaviour:
   m_MovingTurnSpeed: 360
   m_StationaryTurnSpeed: 180
   m_JumpPower: 6
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: .200000003
   m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: .200000003
 --- !u!136 &13695300
 CapsuleCollider:
