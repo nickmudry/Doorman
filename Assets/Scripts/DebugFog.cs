@@ -13,4 +13,14 @@ public class DebugFog : EditorWindow {
             RenderSettings.fog = true;
 
     }
+    [MenuItem ("Debug Settings/Toggle Walls")]
+    public static void ToggleWalls()
+    {
+        GameObject[] wallCollection;
+        wallCollection = GameObject.FindGameObjectsWithTag("Wall");
+        foreach (GameObject wall in wallCollection)
+        {
+            wall.GetComponent<Renderer>().enabled = !wall.GetComponent<Renderer>().enabled;
+        }
+    }
 }
