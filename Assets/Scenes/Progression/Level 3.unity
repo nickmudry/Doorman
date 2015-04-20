@@ -1517,14 +1517,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 14385048, guid: f451b223b1bbae745b7bca6ca94b48af, type: 2}
-      propertyPath: m_SlopeLimit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11412060, guid: f451b223b1bbae745b7bca6ca94b48af, type: 2}
-      propertyPath: dampTime
-      value: .150000006
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f451b223b1bbae745b7bca6ca94b48af, type: 2}
   m_IsPrefabParent: 0
@@ -4687,7 +4679,7 @@ Transform:
   m_LocalPosition: {x: 2.63179994, y: 2.9245162, z: 4.53022385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 828523812}
   m_RootOrder: 3
 --- !u!1001 &501742403
 Prefab:
@@ -7700,6 +7692,7 @@ Transform:
   - {fileID: 1839190515}
   - {fileID: 279681811}
   - {fileID: 1770741906}
+  - {fileID: 500717952}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!4 &828612976

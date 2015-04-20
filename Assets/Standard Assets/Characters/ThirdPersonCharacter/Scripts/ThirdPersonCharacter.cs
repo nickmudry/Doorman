@@ -62,9 +62,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		void UpdateAnimator(Vector3 move)
 		{
 			// update the animator parameters
-
+            
             //****************** Converted a bunch of fancy physics stuff as well as the animator for the default unity dude to a simpler "if guy moves do walk cycle if ot idle"
-            if (move.z > 0.05f)
+            if (move.z > .5F)
             {
                 m_Animator.SetInteger("Forward", 1);
             }

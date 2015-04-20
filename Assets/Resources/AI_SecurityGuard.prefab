@@ -109,6 +109,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &134756
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 436378}
+  - 33: {fileID: 3398410}
+  - 23: {fileID: 2397584}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &138186
 GameObject:
   m_ObjectHideFlags: 1
@@ -154,7 +171,6 @@ GameObject:
   - 195: {fileID: 19500548}
   - 114: {fileID: 11407102}
   - 114: {fileID: 11484726}
-  - 114: {fileID: 11420258}
   m_Layer: 0
   m_Name: AI_SecurityGuard
   m_TagString: Enemy
@@ -369,7 +385,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.78299999, y: .899999976, z: -2.11899996}
+  m_LocalPosition: {x: 3.77999997, y: .899999976, z: -3.46000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 432376}
@@ -406,6 +422,18 @@ Transform:
   - {fileID: 488192}
   - {fileID: 469842}
   m_Father: {fileID: 417676}
+  m_RootOrder: 0
+--- !u!4 &436378
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134756}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
+  m_LocalPosition: {x: -.114, y: -.136999995, z: -0}
+  m_LocalScale: {x: .313416123, y: .300944239, z: .505205393}
+  m_Children: []
+  m_Father: {fileID: 469842}
   m_RootOrder: 0
 --- !u!4 &439110
 Transform:
@@ -505,7 +533,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .00763872685, y: 1.78212845, z: 0}
   m_LocalScale: {x: 1.10182393, y: 1.82331133, z: 1.8057059}
-  m_Children: []
+  m_Children:
+  - {fileID: 436378}
   m_Father: {fileID: 432376}
   m_RootOrder: 7
 --- !u!4 &478326
@@ -775,6 +804,30 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!23 &2397584
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134756}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 8540635330b6537479d40b910ce31354, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!33 &3307902
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -831,6 +884,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180122}
   m_Mesh: {fileID: 4300002, guid: 64e70c7ed16463b4ca32a77a47e1fcfe, type: 3}
+--- !u!33 &3398410
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134756}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &5492614
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -892,20 +952,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
---- !u!114 &11420258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162058}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ab4e0758d9b9904883117f06dd10606, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeLocations:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &11484726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -919,16 +965,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovingTurnSpeed: 360
   m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
+  m_JumpPower: 12
   m_MoveSpeedMultiplier: 1
-  m_GroundCheckDistance: .200000003
+  m_GroundCheckDistance: .100000001
 --- !u!136 &13695300
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162058}
-  m_Material: {fileID: 13400000, guid: cf63880488ec29f43a759ecd9c6c5123, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .300000012
@@ -942,12 +988,12 @@ NavMeshAgent:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162058}
   m_Enabled: 1
-  m_Radius: .610000014
-  m_Speed: 3.5
+  m_Radius: 1
+  m_Speed: 1.5
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: .100000001
+  m_StoppingDistance: .150000006
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

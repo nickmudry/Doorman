@@ -1933,7 +1933,7 @@ MonoBehaviour:
   cursor: {fileID: 0}
   target: {fileID: 431690}
   target2: {fileID: 451234}
-  dampTime: .25
+  dampTime: .150000006
 --- !u!114 &11422518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2005,7 +2005,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 2
   m_Radius: .150000006
-  m_SlopeLimit: 45
+  m_SlopeLimit: 0
   m_StepOffset: .300000012
   m_SkinWidth: .0799999982
   m_MinMoveDistance: .00100000005
