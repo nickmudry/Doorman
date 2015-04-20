@@ -361,7 +361,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104928}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.307999998, z: 0}
   m_LocalScale: {x: 1, y: .333333343, z: 1}
   m_Children:
@@ -559,7 +559,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.61999989, y: 7.61999989, z: -2.38000011}
+  m_LocalPosition: {x: -3, y: 2, z: -1}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children:
   - {fileID: 404300}
@@ -731,7 +731,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.78813934e-07, z: 2.28881049}
+  m_ConnectedAnchor: {x: 0, y: -8.94069672e-08, z: 2.28881049}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9f5be513e474d43a87c3c4771bf5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBecomeDoor: 0
+  canBecomeDoor: 1
   becameDoor: 0
   door: {fileID: 2100000, guid: 90e6085ec18832345a45276600746b42, type: 2}
   wall: {fileID: 2100000, guid: 526e49e152817684e8b1aab375c9e767, type: 2}
