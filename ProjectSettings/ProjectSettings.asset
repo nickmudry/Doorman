@@ -11,7 +11,7 @@ PlayerSettings:
   targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: PlayNimbus
   productName: Doorman
   cloudProjectId: 
   defaultCursor: {fileID: 0}
@@ -130,12 +130,12 @@ PlayerSettings:
   - width: 320
     height: 180
     banner: {fileID: 0}
-  resolutionDialogBanner: {fileID: 2800000, guid: 1fbc4e410d66d804aaf31b4c25b16ffc,
+  resolutionDialogBanner: {fileID: 2800000, guid: a055903b3dd32144d834e102184968c6,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: a055903b3dd32144d834e102184968c6, type: 3}
       m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default

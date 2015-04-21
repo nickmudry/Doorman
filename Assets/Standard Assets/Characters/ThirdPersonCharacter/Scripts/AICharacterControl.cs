@@ -43,6 +43,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         }
 
+        void OnCollisionEnter(Collision col)
+        {
+            if (col.gameObject.tag == "Player")
+            {
+                Application.LoadLevel("Level 0");
+            }
+        }
 
         public void SetTarget(Transform target)
         {
